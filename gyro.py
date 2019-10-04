@@ -39,8 +39,8 @@ address = 0x68       # via i2cdetect
 # Aktivieren, um das Modul ansprechen zu koennen
 bus.write_byte_data(address, power_mgmt_1, 0)
  
-print "Gyroskop"
-print "--------"
+print ("Gyroskop")
+print ("--------")
  
 gyroskop_xout = read_word_2c(0x43)
 gyroskop_yout = read_word_2c(0x45)
